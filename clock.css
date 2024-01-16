@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Telugu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#secondsContainer{
+    height: 70vh;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(119, 118, 118, 0.442); */
+    /* background-image: linear-gradient(to right,rgba(0, 0, 0, 0.408),rgba(58, 58, 233, 0.447)); */
+    backdrop-filter: blur(5px);
+    /* box-shadow: 5px 5px 2px black; */
+    border-radius: 10px;
+}
+#seconds{
+    text-align: center;
+    font-size: 80vh;
+    letter-spacing: 5vw;
+    margin-left: 5vw;
+    color: rgba(25, 234, 25, 0.788);
+    text-shadow: 2px 2px 1px black;
+    mix-blend-mode:multiply;
+    
+}
+#timeContainer{
+    height: 70vh;
+    width: 60vw;
+    position: absolute;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 25px;
+    text-shadow: 2px 2px 1px black;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    
+}
+#timeContainer #time{
+    font-size: 8vw;
+}
+#timeContainer #date{
+    font-size: 6vw;
+    color: blue;
+    text-shadow: 2px 2px 1px rgb(255, 255, 255);
+   
+}
+#timeContainer #day{
+    color: blue;
+    margin-left: 2vw;
+    letter-spacing: 2vw;
+    text-shadow: 2px 2px 1px rgb(255, 255, 255);
+}
+i{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    color: black;
+    text-shadow: none;
+    font-size: 35px;
+}
+#alarmContainer{
+    position: absolute;
+    height: 70vh;
+    width: 60vw;
+    background-color: red;
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+}
+#alarmContainer button{
+    height: 6vh;
+    width: 4vw;
+    font-size: 20px;
+    color: black;
+}
+#hours,#minutes,#am_pm{
+    height: 6vh;
+    width: 4vw;
+    overflow: scroll;
+}
+#hours::-webkit-scrollbar{
+    display: none;
+}
+#minutes::-webkit-scrollbar{
+    display: none;
+}
+#am_pm::-webkit-scrollbar{
+    display: none;
+}
+span{
+    position: absolute;
+    top: 1vw;
+    right: 2vw;
+    font-size: 3vw;
+    color: white;
+    rotate: 45deg;
+    transition: all 0.5s;
+}
+span:hover{
+    rotate: 135deg;
+    scale: 1.5;
+}
